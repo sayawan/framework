@@ -2,6 +2,7 @@
 
 Famous Carousel app [https://github.com/Famous/lesson-carousel-starter-kit](https://github.com/Famous/lesson-carousel-starter-kit) ported to Framework
 
+[DEMO](http://sayawan.github.io/framework/)
 - - - -
 
 ### Setup &amp; installation
