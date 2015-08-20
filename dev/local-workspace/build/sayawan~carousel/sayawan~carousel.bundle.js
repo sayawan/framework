@@ -497,7 +497,8 @@ FamousFramework.includes("sayawan:carousel", "HEAD", [], function() {
                         10,
                         10
                     ],
-                    'position-x': function ($index, sizeX, dotWidth, spacing, numPages) {
+                    'position-x': function ($index, sizeX, dotWidth, spacing, dots) {
+                        var numPages = dots.length;
                         var totalDotSize = dotWidth * numPages + spacing * (numPages - 1);
                         var start = (sizeX - totalDotSize) / 2;
                         var result = start + (dotWidth + spacing) * $index;
@@ -519,6 +520,9 @@ FamousFramework.includes("sayawan:carousel", "HEAD", [], function() {
             },
             events: {
                 '$public': {
+                    'dots': function ($state, $payload) {
+                        $state.set('dots', $payload);
+                    },
                     'currentIndex': function ($state, $payload) {
                         $state.set('currentIndex', $payload);
                     }
@@ -536,23 +540,9 @@ FamousFramework.includes("sayawan:carousel", "HEAD", [], function() {
                 }
             },
             states: {
-                dots: [
-                    1,
-                    2,
-                    3,
-                    4,
-                    5,
-                    6,
-                    7,
-                    8,
-                    9,
-                    10,
-                    11,
-                    12
-                ],
+                dots: [],
                 dotWidth: 10,
                 spacing: 5,
-                numPages: 12,
                 sizeX: 0,
                 currentIndex: 0,
                 backgroundColor: 'white'
@@ -732,6 +722,9 @@ FamousFramework.includes("sayawan:carousel", "HEAD", [], function() {
                     ]
                 },
                 '#dots': {
+                    'dots': function (pageData) {
+                        return pageData;
+                    },
                     'size': [
                         undefined,
                         20
