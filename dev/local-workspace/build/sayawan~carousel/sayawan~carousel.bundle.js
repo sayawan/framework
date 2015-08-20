@@ -1,6 +1,6 @@
 // Copyright 2015 (c) Famous Industries, Inc.
 "use strict";
-FamousFramework.includes("sayawan:carousel", "HEAD", ["sayawan/carousel/data.js"], function() {
+FamousFramework.includes("sayawan:carousel", "HEAD", [], function() {
     (function(){
         'use strict';
         FamousFramework.module('famous:core:node', 'HEAD', {
@@ -661,6 +661,7 @@ FamousFramework.includes("sayawan:carousel", "HEAD", ["sayawan/carousel/data.js"
         });
     }());
     (function(){
+        'use strict';
         var data = [
             'http://demo.famo.us.s3.amazonaws.com/hub/apps/carousel/Museo_del_Prado_-_Goya_-_Caprichos_-_No._01_-_Autorretrato._Francisco_Goya_y_Lucientes2C_pintor_thumb.jpg',
             'http://demo.famo.us.s3.amazonaws.com/hub/apps/carousel/Museo_del_Prado_-_Goya_-_Caprichos_-_No._02_-_El_si_pronuncian_y_la_mano_alargan_al_primero_que_llega_thumb.jpg',
@@ -675,7 +676,6 @@ FamousFramework.includes("sayawan:carousel", "HEAD", ["sayawan/carousel/data.js"
             'http://demo.famo.us.s3.amazonaws.com/hub/apps/carousel/Museo_del_Prado_-_Goya_-_Caprichos_-_No._12_-_A_caza_de_dientes_thumb.jpg',
             'http://demo.famo.us.s3.amazonaws.com/hub/apps/carousel/Museo_del_Prado_-_Goya_-_Caprichos_-_No._13_-_Estan_calientes_thumb.jpg'
         ];
-        'use strict';
         FamousFramework.component('sayawan:carousel', 'HEAD', {
             'dependencies': {
                 'famous:events': 'HEAD',
@@ -802,7 +802,6 @@ FamousFramework.includes("sayawan:carousel", "HEAD", ["sayawan/carousel/data.js"
             },
             tree: '<sayawan:carousel:arrow id="next"></sayawan:carousel:arrow>\n        <sayawan:carousel:arrow id="back"></sayawan:carousel:arrow>\n        <sayawan:carousel:dots id="dots"></sayawan:carousel:dots>\n        <sayawan:carousel:pager id="pager"></sayawan:carousel:pager>\n    '
         }).config({
-            includes: ['data.js'],
             imports: {
                 'sayawan:carousel': [
                     'arrow',
