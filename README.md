@@ -2,13 +2,9 @@
 
 Experimenting with Famous Framework. Repository includes two apps made by @sayawan
 
-* Twitter clone app [https://github.com/sayawan/framework/tree/gh-pages/lib/core-components/sayawan/twitter](https://github.com/sayawan/framework/tree/gh-pages/lib/core-components/sayawan/twitter)
+* Twitter clone app [CODE](https://github.com/sayawan/framework/tree/gh-pages/lib/core-components/sayawan/twitter) | [DEMO](http://sayawan.github.io/ff-twitter/)
 
-[DEMO](http://sayawan.github.io/ff-twitter/)
-
-* Famous Carousel app [https://github.com/sayawan/framework/tree/gh-pages/lib/core-components/sayawan/carousel](https://github.com/sayawan/framework/tree/gh-pages/lib/core-components/sayawan/carousel)
-
-[DEMO IS COMING]()
+* Famous Carousel app [CODE](https://github.com/sayawan/framework/tree/gh-pages/lib/core-components/sayawan/carousel) | ~~[DEMO]~~
 
 NOTE: Code cleaning is needed & because of lack of documentation there can be mis-use of some important concepts
 
