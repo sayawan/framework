@@ -1,4 +1,6 @@
-## Carousel with Famous Framework
+## Learning Famous Framework
+
+Repository includes two apps
 
 Famous Carousel app [https://github.com/Famous/lesson-carousel-starter-kit](https://github.com/Famous/lesson-carousel-starter-kit) ported to Framework
 
